@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Linkked List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dqdo29iis/image/upload/v1722795862/XAHAGSbEQ3m5-aKCV6UWHA.jpg">
+
+</head>
+<body>
+    <div class="container">
+        <div class="book-list">
+            <h2>Books</h2>
+            <ul id="books-list">
+
+            </ul>
+            
+        </div>
+        <div>
+            <img class="book-img " id="book-img" />
+        </div>
+        <div class="book-form" >
+            <h2>Book Details</h2>
+            <label for="title">Title</label>
+            <input type="text" id="title" placeholder="Title">
+            <label for="author">Author</label>
+            <input type="text" id="author" placeholder="Author">
+            <label for="price">Price</label>
+            <input type="number" id="price" placeholder="Price">
+            <label for="rating">Rating</label>
+            <input type="number" id="rating" placeholder="Rating">
+            <label for="cover">Cover URL</label>
+            <input type="text" id="cover" placeholder="Cover URL">
+            <button onclick="addBookUI()">Add Book</button>
+            <button onclick="saveBookUI()">Save</button>
+            <button onclick="deleteBookUI()">Delete</button>
+        </div>
+    </div>
+    <script src="books_list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

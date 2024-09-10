@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Toggling Assignment</title>
+    <style>
+        h2{
+            cursor: pointer;
+
+        }
+        h2:hover {
+            color: blue; 
+        }
+
+        button{
+            background-color: rgb(240, 228, 228);
+            border: 2px SOLID BLACK;
+            border-radius: 4px;
+            padding: 7px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(200, 200, 200); 
+            border-color: blue; 
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Tutorial</h1>
+    <button onclick="app.eachSectionToggle('')">Toggle All</button>
+
+    <h2  onclick="app.eachSectionToggle('intro')">Introduction</h2>
+    <p class="intro">Jquery is  a javascript library for dom manipulation</p>
+
+    <h2 onclick="app.eachSectionToggle('impEls')">Important Elements</h2>
+    <ul class="impEls">
+        <li>Selector</li>
+        <li>Actions</li>
+        <li>Utility</li>
+    </ul>
+
+    <h2 onclick="app.eachSectionToggle('selectors')">Selectors</h2>
+    <p class="selectors">jQuery selectors helps us select multiple items mathcing the selection
+        <ul class="selectors">
+            <li>Element Selector</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+            <li>Attribute Selector</li>
+            <li>Child Selector</li>
+            <li>Parent Selector</li>
+            <li>Sibling Selector</li>
+            <li>Group Selector</li>
+            <li>Universal Selector</li>
+            <li>Form Selector</li>
+            <li>CSS3 Pseudo-class Selector</li>
+            <li>jQuery Object Selector</li>
+        </ul>
+    </p>
+
+    <h2 onclick="app.eachSectionToggle('actions')" >Actions</h2>
+    <p class="actions">jQuery selectors helps us select multiple items mathcing the selection   
+        <ul class="actions">
+            <li>hide()</li>
+            <li>show()</li>
+        </ul>
+
+    </p>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      var app = (function () {
+
+    
+
+        var eachSectionToggle=(className)=>{
+            
+            var paraEls= className===''? $("p"): $(`p.${className}`);
+            var ulEls= className===''? $("ul"): $(`ul.${className}`);
+            paraEls.toggle(500);
+            ulEls.toggle(500);
+        }
+
+
+
+
+        return {
+        eachSectionToggle
+        };
+      })();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Dynamic Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+        <h1><i>Dynamic Calculator</i></h1>
+      <fieldset>
+        <legend>Value1</legend>
+        <input type="number" placeholder="Enter a number" id="val1" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Operator</legend>
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+          </select>
+      </fieldset>
+      
+
+      <fieldset>
+        <legend>Value2</legend>
+        <input type="number" placeholder="Enter a number" id="val2" />
+      </fieldset>
+
+      <button onclick="getResult()">Calculate</button>
+
+      <fieldset>
+        <legend>Result</legend>
+        <h2 id="result"></h2>
+      </fieldset>
+    </div>
+
+    <script src="calc03.js"></script>
+  </body>
+</html>

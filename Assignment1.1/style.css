@@ -1,0 +1,67 @@
+body{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    width: 100vw;
+    
+
+    div{
+        margin-bottom: 50px;
+    }
+}
+
+button{
+    cursor: pointer;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+
+.input-container{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        background-color: rgb(190, 235, 243);
+        padding: 7px;
+        border: 1px solid  rgb(2, 70, 82);
+        height: 40px;
+        width: 70px;
+        border-radius: 3px;
+        padding: 7px;
+    }
+}
+
+.button-card{
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button{
+        background-color: rgb(245, 227, 245);
+        border: 1px solid rgb(71, 3, 71);
+        border-radius: 3px;
+        padding: 7px;
+    }
+}
+
+
+#numbers-list{
+    padding: 30px;
+    border: 1.5px solid purple;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#console{
+    padding: 30px;
+    border: 1.5px solid purple;
+    border-radius: 3px;
+    font-weight: bold;
+}
