@@ -1,0 +1,40 @@
+### Test GET request to the root endpoint
+GET http://localhost:8000/
+
+### Test GET request to fetch all authors
+GET http://localhost:8000/authors
+
+###
+
+### Test GET request to fetch an author by ID (replace `123` with a valid ID)
+GET http://localhost:8000/id=mahatma-gandhi
+
+
+### Test POST request to create a new author
+POST http://localhost:8000/authors
+Content-Type: application/json
+
+{
+  "data": {
+    "name": "New Author",
+    "books": ["Book 1", "Book 2"]
+  }
+}
+
+###
+
+### Test PUT request to update an author by ID (replace `123` with a valid ID)
+PUT http://localhost:8000/authors/123
+Content-Type: application/json
+
+{
+  "authorDetails": {
+    "name": "Updated Author",
+    "books": ["Updated Book 1", "Updated Book 2"]
+  }
+}
+
+###
+
+### Test DELETE request to delete an author by ID (replace `123` with a valid ID)
+DELETE http://localhost:8000/authors/mahatma-gandhi
