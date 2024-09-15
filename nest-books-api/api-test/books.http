@@ -1,0 +1,39 @@
+GET http://localhost:5000/api/books
+
+###
+
+POST http://localhost:5000/api/books
+Content-Type: application/json
+ 
+{
+    "id":"atomic-habits",
+    "title":"Atomic Habits",
+    "isbn":1,
+    "author":"James",
+    "author_id":"james",
+    "rating":3.5,
+    "photo":"dumas.png"
+}
+
+
+###
+
+PUT http://localhost:5000/api/books/atomic-habits
+Content-Type: application/json
+ 
+{    
+    "rating":4.5,
+    "photo":"lallu.png"
+}
+
+
+###
+
+DELETE http://localhost:5000/api/books/atomic-habits
+
+
+###
+
+GET http://localhost:5000/api/books/atomic-habits
+
+###
